@@ -1,4 +1,4 @@
-# Syncfusion® Blazor Docx Editor SDK Demos
+# Syncfusion® Blazor Docx Editor SDK Demos 
 This repository contains the demos of Syncfusion® Blazor [**Docx Editor**](https://document.syncfusion.com/demos/docx-editor/blazor-server/document-editor/default-functionalities) Component samples.
 The following topics can help you to use the Syncfusion Blazor Docx Editor and run this application in your local. 
 * [Requirements to run the demo](#requirements-to-run-the-demo)
