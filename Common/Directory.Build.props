@@ -1,0 +1,33 @@
+<Project>
+  <PropertyGroup>
+    <RestoreUseStaticGraphEvaluation>true</RestoreUseStaticGraphEvaluation>
+  </PropertyGroup>
+
+  <!-- Server -->
+  <PropertyGroup Condition="$([System.String]::Copy('$(MSBuildProjectName)').ToLower().EndsWith('server_common_net8'))">
+    <BaseOutputPath>bin/server-net8/</BaseOutputPath>
+    <BaseIntermediateOutputPath>obj/server-net8/</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="$([System.String]::Copy('$(MSBuildProjectName)').ToLower().EndsWith('server_common_net9'))">
+    <BaseOutputPath>bin/server-net9/</BaseOutputPath>
+    <BaseIntermediateOutputPath>obj/server-net9/</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="$([System.String]::Copy('$(MSBuildProjectName)').ToLower().EndsWith('server_common_net10'))">
+    <BaseOutputPath>bin/server-net10/</BaseOutputPath>
+    <BaseIntermediateOutputPath>obj/server-net10/</BaseIntermediateOutputPath>
+  </PropertyGroup>
+
+  <!-- WASM -->
+  <PropertyGroup Condition="$([System.String]::Copy('$(MSBuildProjectName)').ToLower().EndsWith('wasm_common_net8'))">
+    <BaseOutputPath>bin/wasm-net8/</BaseOutputPath>
+    <BaseIntermediateOutputPath>obj/wasm-net8/</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="$([System.String]::Copy('$(MSBuildProjectName)').ToLower().EndsWith('wasm_common_net9'))">
+    <BaseOutputPath>bin/wasm-net9/</BaseOutputPath>
+    <BaseIntermediateOutputPath>obj/wasm-net9/</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="$([System.String]::Copy('$(MSBuildProjectName)').ToLower().EndsWith('wasm_common_net10'))">
+    <BaseOutputPath>bin/wasm-net10/</BaseOutputPath>
+    <BaseIntermediateOutputPath>obj/wasm-net10/</BaseIntermediateOutputPath>
+  </PropertyGroup>
+</Project>
